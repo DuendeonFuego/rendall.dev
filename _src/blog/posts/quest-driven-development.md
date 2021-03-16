@@ -9,17 +9,17 @@ tags:
   - QDD
 ---
 
-_Quest Driven Development_ is an expressive approach to writing game stories and interactive fiction that leaves coding and implementation to software, so writers can focus on narrative and world-building. This approach can highlight inconsistencies or problems as potentially clashing narrative branches are woven together, allowing a writer to correct errors or inconsistencies as they go.
+_Quest Driven Development_ is an expressive approach to writing game stories and interactive fiction that leaves coding and implementation to software, so writers can focus on narrative and world-building. This approach can highlight inconsistencies or problems as potentially clashing narrative branches are woven together, allowing a writer to correct errors or inconsistencies as they go. I like this intro, but at this point in the essay I'm not sure if you're explaining an extant technique or proposing a new approach. A simple declarative sentence (like the kind used in a scientific abstract) might help here. Something like " QDD is a proposed approach to..." or "this essay proposes a new approach to narrative developement and interactive fiction..."
 
-Currently _Quest Driven Development (QDD)_ is in the concept phase, but the problem and solution space is generally well understood. This post is a brief overview of its ideas.
+Currently _Quest Driven Development (QDD)_ is in the concept phase, but the problem and solution space is generally well understood. This post is a brief overview of its ideas. This sentence seems to clarify things, but I'm not sure I understand how things are well understood at this point in the essay. The essay might be stronger without it. And okay it's also repeated down below.
 
 The approach itself and infrastructure tooling is [open-source](https://github.com/rendall/quest-driven-development) (nothing hidden, and you can contribute) under the [standard MIT License](https://github.com/rendall/quest-driven-development/blob/master/LICENSE) (use it however you want, commercially or not, heck launch a business with it), and uses the [all-contributors specification](https://allcontributors.org/docs/en/overview), which honors every contributor and contribution, both technical and non-technical.
 
 ## Introduction
 
-Story-rich games, interactive fiction, branching narratives of all sorts, including even bog-standard fetch quests, all have the same underlying abstract structure. Leveraging principles from theory and practice in other areas of software development can improve the design, writing and programming of branching narratives.
+Story-rich games, interactive fiction, and branching narratives of all sorts (including bog-standard fetch quests), all have the same underlying abstract structure. Leveraging principles from theory and practice in other areas of software development can improve the design, writing and programming of branching narratives. Great sentence.
 
-A branching narrative creator can, using _Quest Driven Development_, focus on the over-arching story, narrowing in on story details as needed, all while leaving actual implementation details such as variable values, error checks and if-then conditionals to software infrastructure and tooling.
+A branching narrative creator can, using _Quest Driven Development_, focus on the over-arching story, narrowing in on story details as needed, all while leaving actual implementation details such as variable values, error checks and if-then conditionals to software infrastructure and tooling. You might restructure this sentence to lead with QDD and make it a bit more active. This would reduce the number of clauses a bit. Also, this concept seems conditional on an effective software "companion." You might want to address at some point (although I do remember it's in the addenda a bit).
 
 When mature, this approach allows:
 
@@ -31,27 +31,27 @@ When mature, this approach allows:
 - enable porting of game narratives into different platforms;
 - data-gathering about the popularity and difficulty of various narrative structures.
 
-As time goes on and the approach matures even further, it should be possible to procedurally generate coherent, unique branching narrative structures, for nearly infinite narratives.
+As time goes on and the approach continues to develop (I probably wouldn't use mature twice here, as "mature" typically implies something like an end state), it should be possible to procedurally generate coherent, branching narrative structures for nearly infinite narratives.
 
-Given the similar structures that quests share with well-understood problems in software development, current best practices and solutions to these problems can be leveraged to handle or even solve them.
+Given the similar structures that quests share with well-understood problems in software development, current best practices and solutions to these problems can be leveraged to handle or even solve them. This sentence is probably important, but I'm not sure I understand it given that I don't know what problems in software development you might be referencing. Is the sentence necessary at this point in the essay? The concept is already discussed in the intro to this segment.
 
 ### Brief Taxonomy of Interactive Narrative Structures
 
 If you're familiar with interactive and branching narratives, feel free to skip ahead!
 
-_Branching Narrative_ is a general term for the class of stories in which player actions can decide how a story proceeds. [Black Mirror: Bandersnatch](https://en.wikipedia.org/wiki/Black_Mirror%3A_Bandersnatch) is one example of this story as applied to film. [Life Is Strange](https://en.wikipedia.org/wiki/Life_Is_Strange) is an example applied to the medium of video games. [Dictionary of the Khazars](https://en.wikipedia.org/wiki/Dictionary_of_the_Khazars) is (arguably) an example of branching narrative applied to the traditional book medium.
+_Branching Narrative_ is a general term for the class of stories in which player actions can decide how a story proceeds. [Black Mirror: Bandersnatch](https://en.wikipedia.org/wiki/Black_Mirror%3A_Bandersnatch) is one example of this story as applied to film. [Life Is Strange](https://en.wikipedia.org/wiki/Life_Is_Strange) is an example applied to the medium of video games. [Dictionary of the Khazars](https://en.wikipedia.org/wiki/Dictionary_of_the_Khazars) is (arguably) an example of branching narrative applied to the traditional book medium. Love this. Had to look up the Dictionary of the Khazars.
 
-_Interactive_ here means that the story somehow reacts to the player. (And _player_ here means the viewer or reader or player, irrespective of the medium.)
+_Interactive_ here means that the story somehow reacts to the player, whereas _player_ means the viewer or reader or player, irrespective of the medium. I don't think you need the parentheses here. It's stronger without them.
 
 #### Linear Narrative
 
-Stories throughout history have overwhelmingly been _linear_, in which the story begins and proceeds inevitably to its conclusion, _Once upon a time..._ to _...happily ever after_.
+Stories throughout history have overwhelmingly been _linear_, in which the story begins and proceeds inevitably to its conclusion -- _Once upon a time..._ to _...happily ever after_.
 
-Often _linear narrative_ is contrasted with _interactive narrative_, but sometimes a narrative can be _interactive_ but nevertheless _linear_: there are no branching states irrespective of the player's actions. While usually considered to be a flaw, it sometimes can be an effective story-telling device. One example is the interactive fiction [Photopia](https://en.wikipedia.org/wiki/Photopia).
+Often _linear narrative_ is contrasted with _interactive narrative_, but sometimes a narrative can be _interactive_ but nevertheless _linear_; i.e., there are no branching states irrespective of the player's actions. While usually considered to be a flaw, it sometimes can be an effective story-telling device. One example is the interactive fiction [Photopia](https://en.wikipedia.org/wiki/Photopia).
 
 #### Quests
 
-A _quest_ is a goal-oriented subset of the general _branching narrative_, in which generally a character succeeds at a task and is rewarded or fails and is not. As a minor point, _Quest Driven Development_ itself can apply to any style of branching narrative, not only quests. _Quest Driven Development_ is however a snappier name than _Branching Narrative Driven Development_
+A _quest_ is a goal-oriented subset of the general _branching narrative_, in which generally a character succeeds at a task and is rewarded or fails and is not. As a minor point, _Quest Driven Development_ itself can apply to any style of branching narrative, not only quests. _Quest Driven Development_ is however a snappier name than _Branching Narrative Driven Development_ Ah yep, I was waiting for this clarification. Would just Narrative Driven Development be a better name for this concept?
 
 #### Choose Your Own Adventure
 
@@ -65,7 +65,7 @@ Quests and branching narratives in general correspond to some well-understood ma
 
 ### Finite state machines and Statecharts
 
-A [finite state machine (FSM)](https://en.wikipedia.org/wiki/Finite-state_machine) is an idea from computer science, an abstract machine which has a specific number of _states_. A [_state_](<https://en.wikipedia.org/wiki/State_(computer_science)#Program_state>) can here entirely describe the player's position along a narrative arc as the result of any past decisions or actions. Some of the possible decisions at a given state will _transition_ the narrative arc from the current state to another state. In this way, a quest can be described as a finite state machine (or, rather, this essay applies only to those interactive narratives that fit the structure of a finite state machine). A _terminal state_ for our purposes is a state that ends, or narratively concludes, the quest.
+A [finite state machine (FSM)](https://en.wikipedia.org/wiki/Finite-state_machine) is an idea from computer science that refers to an abstract machine with a specific number of _states_. A [_state_](<https://en.wikipedia.org/wiki/State_(computer_science)#Program_state>) can here entirely describe the player's position along a narrative arc as the result of any past decisions or actions. Some of the possible decisions at a given state will _transition_ the narrative arc from the current state to another state. In this way, a quest can be described as a finite state machine (or, rather, this essay applies only to those interactive narratives that fit the structure of a finite state machine). A _terminal state_ for our purposes is a state that ends, or narratively concludes, the quest.
 
 The [statechart](https://statecharts.github.io/) modifies the concept of finite state machines to more easily apply to real-world solutions, to allow for hierarchical structures and state machines that coordinate in parallel. This could allow for the FSM that represents the narrative structure to overlay another FSM that represents locations in the game, for example.
 
